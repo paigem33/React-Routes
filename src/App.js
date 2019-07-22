@@ -16,7 +16,7 @@ import ContactUs from './pages/ContactUs'
 import NotFound from './pages/NotFound'
 import Meme from './pages/Meme'
 import MemeShow from './pages/MemeShow'
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css'; 
 
 export default class App extends Component {
   render() {
