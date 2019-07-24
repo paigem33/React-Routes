@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 // import uhoh from './uhohcat.jpeg'
-import pathetic from './pathetic.png'
+import pathetic from './photos/pathetic.png'
 
 export default class NotFound extends Component {
     render() {

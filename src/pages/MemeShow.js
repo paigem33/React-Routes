@@ -7,7 +7,7 @@
 	} from "react-router-dom";
 
 	import memes from '../store/memes'
-	import appa from './appa.jpg'
+	import appa from './photos/appa.jpg'
 
 	class MemeShow extends Component {
 	  constructor(props){

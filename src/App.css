@@ -3,8 +3,24 @@
   flex-direction: column;
   justify-content: center;
 }
+.pageFlex {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.pageCenter {
+  margin: 0 50px;
+  text-align: center;
+}
+.skills.card, .about.card {
+  max-width: 300px;
+}
+.card {
+  margin: 10px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 .navImg {
-  width: 150px;
+  width: 100px;
 }
 img {
   width: 300px;
@@ -16,32 +32,18 @@ img {
 }
 nav a {
   font-size: 28px;
+  color: purple;
 }
-#mainNav {
-  background-color: black !important;
+nav a:hover {
+  color: purple;
 }
-
 .navImg {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
   animation: 2s shake infinite alternate
 }
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+footer {
+  background-color: rgb(77, 25, 77);
+  color: white;
 }

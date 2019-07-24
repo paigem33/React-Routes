@@ -7,7 +7,7 @@ import {
   Link,
   Switch
 } from "react-router-dom"
-import lawd from "./pages/ohlawd.jpg"
+import lawd from "./pages/photos/ohlawd.jpg"
 import Home from './pages/Home'
 import AboutMeow from './pages/AboutMeow'
 import Skills from './pages/Skills'
@@ -16,6 +16,7 @@ import ContactUs from './pages/ContactUs'
 import NotFound from './pages/NotFound'
 import Meme from './pages/Meme'
 import MemeShow from './pages/MemeShow'
+import navImg1 from './pages/photos/navImg1.jpeg'
 import 'bootstrap/dist/css/bootstrap.css'; 
 
 export default class App extends Component {
@@ -26,7 +27,7 @@ export default class App extends Component {
       <Router>
         
         <div id="mainNav" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-            <img src={lawd} className="navImg my-0 mr-md-auto font-weight-normal"></img>
+            <img src={navImg1} className="navImg my-0 mr-md-auto font-weight-normal"></img>
             <nav class="my-2 my-md-0 mr-md-3">
             <Link to="/" className="p-2 display-8">Home</Link>
               <Link to="/aboutmeow" className="p-2">About Me-ow</Link>
@@ -47,6 +48,11 @@ export default class App extends Component {
             <Route component= {NotFound} />
           </Switch>
       </Router>
+      <footer class="text-muted">
+        <div class="container">
+          <p>&copy;2019 Kitty-Cat Gang</p>
+        </div>
+      </footer>
       </div>
       );
   }
